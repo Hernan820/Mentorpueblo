@@ -24,6 +24,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-SPhk8sKP9Xwyhzp7gEap6WwmV8IvHcUxV6OM2FHNWfhn6Uv3qzW8V1AJPZgO7VdJ6md3I6yfU6y1AA7QcU6/Iw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -41,12 +42,31 @@
 /* ESTYLO DE BOTONES  */
 
   .list-group-item {
-  background-color: rgb(216, 86, 175);
+  background-color: #e80368;
   color: white;
   border-radius: 10px;
   padding: 10px 20px;
   margin-bottom: 10px;
 }
+
+.ubicacionbtn {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #0ba8d7;
+    --bs-btn-border-color: #0ba8d7;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0ba8d7;
+    --bs-btn-hover-border-color: #0ba8d7;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0ba8d7;
+    --bs-btn-active-border-color: #0ba8d7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0ba8d7;
+    --bs-btn-disabled-border-color: #0ba8d7;
+
+}
+
 
 </style>
 
@@ -96,7 +116,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="courses.html" class="get-started-btn">Get Started</a>
+      <a href="courses.html" class="get-started-btn">Login</a>
 
     </div>
   </header><!-- End Header -->
@@ -105,11 +125,15 @@
   <section id="hero" class="d-flex justify-content-center align-items-center" >
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Panchimalco</h1>
-      <h2>Un pueblo magico donde podras empaparte de su cultura </h2>
+      <h2>Un pintoresco pueblo mágico ubicado en El Salvador,
+         donde podrás sumergirte en su rica cultura prehispánica y colonial.</h2>
+          <br>
 
-      <button type="button" class="btn btn-primary">
+      <a href="https://www.google.com/maps/dir//JR6C%2B95Q,+San+Salvador/@13.6109652,-89.2495515,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8f63338d454bd273:0x6864e44241311cea!2m2!1d-89.179511!2d13.610975"
+      target="_blank" class="btn ubicacionbtn">
         <i class="bi bi-geo-alt"></i> ver ruta panchimalco
-      </button>
+      </a>
+      
       
     </div>
   </section>
@@ -162,9 +186,10 @@
               </div>
 
               <div class="list-group list-group-flush" role="tablist">
-                <a class="list-group-item list-group-item-action  rounded" style="margin-bottom: 15px;" data-bs-toggle="list" href="#account" role="tab">
-                  HOTELES
+                <a class="list-group-item list-group-item-action rounded" style="margin-bottom: 15px;" data-bs-toggle="list" href="#password" role="tab">
+                   HOTELES
                 </a>
+                
                 <a class="list-group-item list-group-item-action rounded" style="margin-bottom: 15px;" data-bs-toggle="list" href="#password" role="tab">
                   ATRACCIONES
                 </a>
@@ -176,8 +201,6 @@
                 </a>
                 <a class="list-group-item list-group-item-action rounded" style="margin-bottom: 15px;" data-bs-toggle="list" href="#" role="tab">
                   LUGARES TURISTICOS
-                </a>
-                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab">
                 </a>
               </div>
           </div>
@@ -225,32 +248,32 @@
 
       </div>
     </section><!-- End About Section -->
-
+    <br><br>
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
 
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
+            <div class="icon-box" style="border-radius: 10px;">
               <i class="ri-store-line" style="color: #ffbb2c;"></i>
               <h3><a href="">HISTORIA</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
+            <div class="icon-box" style="border-radius: 10px;">
               <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
               <h3><a href="">TRADICIONES</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">
+            <div class="icon-box" style="border-radius: 10px;">
               <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
               <h3><a href="">EVENTOS</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box">
+            <div class="icon-box" style="border-radius: 10px;">
               <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
               <h3><a href="">TURISMO</a></h3>
             </div>
